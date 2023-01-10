@@ -7,18 +7,20 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
 <script
   src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.37/moment-timezone-with-data-1970-2030.min.js"></script>
+
   <title>World Clock</title>
 </head>
 <body>
   <div class="container">
   <h1>World Clock</h1>
 
-<select id="city">
-  <option value="">Select a City..</option>
-  <option value="">New York</option>
-  <option value="">London</option>
-  <option value="">Ibiza</option>
-</select>
+    <select id="city">
+      <option value="">Select a city..</option>
+      <option value="current">My current location</option>
+      <option value="Europe/London">London</option>
+      <option value="America/New_York">New York</option>
+      <option value="Pacific/Auckland">Auckland</option>
+    </select>
 
   <div id="cities">
     <div class="city" id="los-angeles">
@@ -41,6 +43,6 @@
     This project was coded by Jamie Navarro and is <a href="#" target="_blank"> open sourced on GitHub</a>
   </footer>
  
-  <script src="/index.html"></script>
+  <script src="src/index.js"></script>
 </body>
 </html>
